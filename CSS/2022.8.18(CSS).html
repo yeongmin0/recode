@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+    <html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width.initial-scale=1.0">
+    <title>2022.8.18 (CSS)</title>
+
+    <h1><b><a href="CSS 기록.html">이전</a></b></h1>
+
+    <style>
+        h2{color: blue;}
+
+        #select{
+        font-size:25px;
+    }
+    .deactive{
+        text-decoration: line-through;
+    }
+    .vip{
+        color: red;
+   }
+
+    </style>
+    
+</head>
+
+<body>
+<h3><u><li><b> CSS 수업 - CSS 소개 </b></li></u></h3>
+<h3><u><li><b> CSS 수업 - 실습 환경 </b></li></u></h3>
+<h3><u><li><b> CSS 수업 - HTML과 CSS가 만나는 법  </b></li></u></h3>
+
+ <b>CSS라는 기술은 html의 토대 위에서 동작하는 기술 </b>
+
+ <h1 style="color:red; text-decoration:underline">Hello World</h1>
+ <h2>Hello World</h2>
+<hr>
+----- 예 시 코 드 <br>
+<b>추가적으로 (style="")은 html 문법이고 color: ; 은 CSS 문법이다</b><br>
+< h1 style="color:red;">Hello World< /h1> (h1 을 대상으로 하는 코드)<br>
+< h2>Hello World< /h2><br>
+<p>
+( head ><br>
+( style><br>
+    h2{color:blue;}<br>
+( /style> <br>
+( /head> <br>
+*<b>< 사용하면 오류떠서 ()로 대체</b></p><hr>
+
+<u><li><b> CSS 수업 - 선택자와 선언  </b></li></u></h3>
+
+<ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+</ul>
+
+<li class="vip">li(선택자){<br>
+    선언 > color(속성):(속성과 속성값을 구분자red(속성값);(선언과 선언을 구분자)<br>
+    text-decoration:underline;<br></li>
+}<br><hr>
+
+<img src="Css selector.png" width="50%" height="50%">
+
+<u><li><b> CSS 수업 - =선택자의종류 1 :아이디선택자  </b></li></u></h3>
+
+<ul>
+    <li>HTML</li>
+    <li id="select">CSS</li>
+    <li>JavaScript</li>
+</ul><hr>
+-----예 시 코 드<br> 
+  #select{ <br>
+        font-size:25px;<br>
+    }<br>
+<li class="vip"><b>*id=select (id 속성을 사용하고 속성값(select)을 css에서 선택할때 그 속성값 이름 앞에 #을 주세요 )</b></li>
+
+<u><li><b> CSS 수업 - =선택자의종류 2 :클래스선택자  </b></li></u></h3>
+
+<ul>
+   <li class="deactive">HTML</li>
+    <li id="select">CSS</li>
+    <li class="deactive">JavaScript</ li>
+</ul><br>
+*<b>class</b> 선택자를 사용하게 되면 같은 태그분만 아니라 서로 다른 태그도 그룹핑해서 묶어줄 수 있다 <br>
+<hr>
+
+----- calss 예 시 코 드<br>
+}<br>
+.deactive{<br>
+    text-decoration: line-through;<br>
+}<br>
+<p>
+- - - - -<br>
+< li class="deactive">HTML </ li><br>
+< li id="select">CSS < /li><br>
+< li class="deactive">JavaScript</ li></p>
+
+내일 다시 복습 할 내용들
+<ol>
+    <li>CSS 수업 -선택자와 선언</li>
+    <li>CSS수업 - 선택자의종류 1 : 아이디선택자</li>
+    <li>CSS수업 - 선택자의 종류 2 : 클래스선택자</li>
+</ol>
+<a href="selector_declaration_1.html">2022.8.19 (복습)</a>
+</body>
+</html>

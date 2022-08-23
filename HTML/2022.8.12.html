@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <h1><b><a href="2022.8월 기록.html">이전</a></b></h1>
+    <meta charset="utf-8">
+    </head>
+    <body>
+<u>
+        <li><b>HTML - form : hidden</b></li>
+</u>
+    <b>- hidden field:눈에 보이지는 않지만 서버 쪽으로 몰래 전송하는 용어 </b><br>
+        <form action="서버이름">
+        <input type="txet" name="id">
+        <input type="hidden" name="hide" value="yeong">
+        <input type="submit">
+    </form><br>
+    -----예 시 코 드<br>
+    < form action="서버이름"><br>
+        < input type="txet" name="id"><br>
+        < input type="hidden" name="hide" value="yeong"><br>
+        < input type="submit"><br>
+    < /form><br><br>
+<u>
+    <li><b>HTML - form : label</b></li><br>
+</u>
+<b>lanel:무언가의 이름표라는 의미</b><br>
+<b>for(퍼):각각의 레이블들이 누구의 이름표인지를 연결시켜주는 속성</b>
+
+    <form action="">
+    <p>
+        <label for="id_txt">txet:</label>:
+        <input type="id_txt name="id" value="de"></p>
+    <p>
+        <label for="password">password</label>:
+        <input id="password" type="password" name="pwd" value="de"></p>
+    <p>
+        <label>textarea
+            <textarea rows="2">기본 문법</textarea>
+        </label>
+    </p>
+    <p>
+        <label>
+            <input type="checkbox" name="color" value="red">붉은색
+        </label>
+        <label for="color_blue">
+            <input id="color_blue" type="checkbox" name="color" value="blue">파란색
+        </label>
+    </p><br>
+
+    ----- 예 시 코 드 <br>
+    <form action="">
+        < p><br>
+            < label for="id_txt">txet:< /label>:<br>
+            < input type="id_txt name="id" value="de">< /p><br>
+        < p><br>
+            < label for="password">password< /label>:<br>
+            < input id="password" type="password" name="pwd" value="de">< /p><br>
+        < p><br>
+            < label>textarea<br>
+            < /label><br>
+        < /p><br>
+        < p><br>
+            < label><br>
+                < input type="checkbox" name="color" value="red">붉은색<br>
+            < /label><br>
+            < label for="color_blue"><br>
+                < input id="color_blue" type="checkbox" name="color" value="blue">파란색<br>
+            < /label><br>
+        < /p><br><br>
+<u>
+        <li><b>HTML - form : method</b></li><br>
+</u>
+<b>-post:url로 전달할떄 감취서 전달하는 방식을 말한다</b><br>
+<b>*폼 태그를 사용한다고하면 메소드(method>를 포스트(post)방식으로 처리하면 된다</b><br><br>
+<b></b>
+    <form action="http:localhost/method.php" method="post">
+        <input type="txet" name="id">
+        <input type="password" name="pwd">
+        <input type="submit">
+    </form><br><br>
+
+----- 예 시 코 드 <br>
+    < form action="http:localhost/method.php" method="post"><br>
+     < input type="txet" name="id"><br>
+     < input type="password" name="pwd"><br>
+     < input type="submit"><br>
+    < /form><br><br>
+<u>
+    <li><b>HTML - form : 파일업로드</b></li><br>
+</u>
+<b>type=file : 사용자가 파일을 input 할 수 있는 파일을 전송할 수 있는 ui를 화면에 출력하는 용도</b><br>
+<b>method="post" enctype="multipart/form-data": 파일을 옵로드하는 기능이 하나라도 있다면 추가하는게 좋다 </b><br><br>
+
+<form action="" method="post" enctype="multipart/form-data">
+    <input type="file" name="profile">
+    <input type="submit">
+</form>
+<br>
+-----예 시 코 드<br>
+< form action="서버이름.php" method="post" enctype="multipart/form-data"> < 부분은 서버 쪽 개발자가 담당하는 것 <br>
+    < input type="file" name="profile"> < name="profile 이 부분도 서버 쪽 개발자가 담당하는 것 <br>
+    < input type="submit"><br>
+< /form><br>
+</body>
+
+</html>

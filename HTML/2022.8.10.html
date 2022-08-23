@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <h1><b><a href="2022.8월 기록.html">이전</a></b></h1>
+  <meta charset="utf-8">
+    </head>
+<u>
+<h3><li><b>HTML - 표3:병합</b></li></h3><br>
+</u>
+    -td rowspan="숫자": 행과 행을 합친다 (적어준 숫자만큼 td를 없애준다)<br>
+    -td coslpan="숫자": 컬럼 적어놓은 숫자 빼기 하나만큼의 태그를 없앤다<br>
+<u>
+<h3><li><b>HTML - form 기본 </b></li></h3><br>
+</u>
+-<b>form</b>:로그인/회원가입 자신이 입력하는 정보를 서비스를 제공하는 서버로 전송할때<br> 
+사용하는 급자를 입력하는 것들을 또한 무언가를 선택하는 것들을 (form)이라고 부른다<br>
+
+<form accept="서버이름">
+    <p>아이디:<input type="txet" name="id"></p>
+    <p>비밀번호:<input type="password" name="pwd"></p>
+    <p>주소:<input type="text" name="address"></p>
+    <input type="submit">
+</form>
+-----form 예시코드<br>
+< form accept="서버이름" ><br>
+    < p >아이디:< input type="txet" name="id">< /p ><br>
+    < p >비밀번호:< input type="password" name="pwd" >< /p ><br>
+    < input type="submit" ><br>
+< /form ><br>
+<u>
+<h3><li><b>HTML - from: 문자입력</b></li></h3><br>
+</u>
+    <form action="">
+        <p><input type="text" name="id" value="de"></p>
+        <p><input type="password" name="pwd" value="de"></p>
+        <p>
+            <textarea cols="50" rows="2">기본 문법</textarea>
+        </p>
+    -<b>value</b>:페이지를 열었을때 기본적으로 적혀있는 태그<br>
+    -<b>taxtarea</b>:여러 줄을 입력 받을때 사용하는 태그<br>
+    -< input type="txet" ><br>
+    -< input type="password" ><br>
+    -< textarea ><br>
+*textarea 가 < input type="txet" 다른 형태로 다른 형태의 태그를 가진 이유는 < input type="" > <br>
+여러줄을 입력하기 어려울때 별도의 < textarea > 이 태그의 기본값을 그 태그의 안쪽에다가<br>
+ 컨텐츠에 입력 할 수 있게끔 다른 형식의 문법을 가지고 있는 것을 알아두면 좋다<br>
+-----예시 코드<br>
+< form action="서버이름"><br>
+    < p>< input type="text" name="id" value="de">< /p ><br>
+    < p>< input type="password" name="pwd" value="de" >< /p><br>
+    < p>textarea :<br>
+        < textarea cols="50" rows="2">기본 문법< /textarea ><br>
+    < /p ><br>
+<u>
+<h3><li><b>HTML - form: dropdown list</b></li></h3>
+</u>
+<h1>색상</h1>
+-dropdown list:제한된 공간안에서 여러가지의 선택지를 선택 할 수 있는 기능<br><br>
+
+<form action="http::localhost./color.php">
+  <select name="color">
+     <option value="red">빨간색</option>
+     <option value="black">검은색</option>
+     <option value="whiyt">하얀색</option>
+  </select>
+  <h1>색상 2(다중선택)</h1>
+  <select name="color2" multiple>
+    <option value="red">빨간색</option>
+    <option value="black">검은색</option>
+    <option value="whiyt">하얀색</option>
+  </select>
+  <input type="submit">
+</form>
+-----예시코드<br>
+< form action="http::localhost./color.php"><br>
+    < select name="color"><br>
+       < option value="red">빨간색</ option><br>
+       < option value="black">검은색</ option><br>
+       < option value="whiyt">하얀색</ option><br>
+     select><br>
+    < h1>색상 2(다중선택)</ h1><br>
+    < select name="color2" multiple><br>
+      < option value="red">빨간색<  /option><br>
+      < option value="black">검은색< /option><br>
+      < option value="whiyt">하얀색< /option><br>
+    < /select><br>
+    < input type="submit"><br>
+  < /form><br>
+<u>
+<h3><li><b>HTML - form: radio,checkbox</b></li></h3>
+</u>
+-<b>radio</b> 버튼은 네임(name) 값이 같은 것들 끼리 그루핑이 되는것이고<br>
+ 같은 그룹에속하는 것 중에 하나가 선택되면 나머지의 선택이 해제되는 형태의 버튼<br>
+-<b>checkbox</b>:라디오 버튼과는 다르게 같은 네임을 가지고 있는 여러개의 컨트롤들을 다중으로 선택할 수 있다<br>
+-<b>checked</b>:기본적으로 선택 되기를 원한 속성없는 태그 
+ <p>
+    <form accept="http://locahost./order.php"
+ <h1>선택 1</h1>
+    빨간색:<input type="radio" name="color" value="red">
+    검은색:<input type="radio" name="color" value="black">
+    파란색:<input type="radio" name="color" value="blue">
+</p>
+<p>
+    <h1>선택 2</h1>
+       25:<input type="checkbox" name="color2">
+       50:<input type="checkbox" name="color2">
+       100:<input type="checkbox" name="color2">  
+    </p> 
+    <input type="submit"><br>
+
+    -----예시 코드<br>
+    < p>
+        < form accept="http://locahost./order.php"<br>
+     < h1>선택 1</ h1><br>
+        빨간색:< input type="radio" name="color" value="red"><br>
+        검은색:< input type="radio" name="color" value="black"><br>
+        파란색:< input type="radio" name="color" value="blue"><br>
+    < /p><br>
+    < p><br>
+        < h1>선택 2</ h1><br>
+           25:< input type="checkbox" name="color2"><br>
+           50:< input type="checkbox" name="color2"><br>
+           100:< input type="checkbox" name="color2"> <br> 
+        < /p> <br>
+        < input type="submit"> <br>
+
+       </html>

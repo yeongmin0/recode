@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<p>
+<u>
+<b><li>HTML - 단락:p 태그</li></p></b>
+</u>
+<p>Electron 프레임워크를 기반으로 만들었다. 
+Visual Studio Team Services(현 Azure DevOps)에 있던 웹 에디터를 발전시켜 Electron 프레임워크를 통해 로컬에서 쓸 수 있게 만든 것에서 출발했다. 
+MS의 개발 툴 중 최초로 크로스 플랫폼을 지원하는 에디터이며 윈도우, macOS, 리눅스를 모두 지원한다.</p>
+
+<p>GitHub에서 배포되는 소스 코드는 MIT 라이선스하에 배포되는 오픈 소스지만,<br>
+실제로 공식 사이트에서 배포되는 릴리즈 바이너리는 마이크로소프트의 독자적 라이선스(EULA의 일종)하에 배포되는 것으로 오픈 소스가 아니다.<br> 
+대부분 사용자들은 릴리즈 바이너리를 설치하므로 마이크로소프트의 독자적 라이선스 하에 VS Code를 사용하고 있다.</p>
+<u>
+<b><li>HTML - 이미지 :img</li></b>
+</u>
+ <p>img src="파일이름" width="픽셀" height="높이(대신 적절한 폭을 브라우저가 맞춰줌") <br>
+    alt="대체제"<br>
+    title="도움말"
+<u>
+<b><li>HTML - 표1:기본</li></b>
+</u>
+<table border="2">
+<thead>
+    <tr>
+       <th>이름</th> <th>성별</th> <th>주소</th>
+</tr>
+</thead>
+ <tbody>
+<tr>
+       <td>강영민</td> <td rowspan="2">남</td> <td>인천</td> 
+</tr>
+
+<tr>
+    <td>강영민</td>  <td>인천</td> 
+</tr>
+</tbody>
+
+</table>
+-< td /td >= 테이블 데이터 (table data) 표의 각각의 데이터를 의미하는 것 <br>
+-< tr /tr >= 테이블 로우 (table row) 같은 행에 속하는 td 태그들을 tr 이라는 태그로 묶어주면<br>
+웹 브라우저는 tr 아래에 있는 td들을 같은 행으로 표시<br>
+-< table /table >= 묶어주는 용도<br>
+-< table border="" >= 테두리 (숫자에 따라 두께가 달라짐/ "css라는 언어로 별도로 꾸며야 됨")<br>
+
+-----<br>
+table border="2"<br>
+< tr ><br>
+      < td >이름< /td > < td>성별</td > < td>주소</ td><br>
+    < /tr ><br>
+    < tr ><br>
+      < td >강영민< /td> < td>남< /td> < td>인천< /td><br> 
+    < /tr><br>
+    < /table><br>
+-----<br>
+<u>
+<b><li>HTML - 표2:구조</li></b>
+</u>
+-< thead > = 머리를 의미하는 것 <br>
+-< tbody > = 본문의 해당하는 것 <br>
+-< tfoot > = <br>
+
+-----(t(table) h(head)예시) <br>
+table border="2"<br>
+< thead ><br> 
+< tr ><br>
+      < th >이름< /t==h > < th>성별</th > < th>주소</ th><br>
+    < /tr ><<br>
+     < /thead ><br>
+     < tbody ><br>
+    < tr ><br>
+      < td >강영민< /td> < td>남< /td> < td>인천< /td><br> 
+    < /tr><br>
+    < /tbody > <br>
+    < tfoot ><br>
+      < td >합계< /td> < td>남< /td> < td>인천< /td><br> 
+    < /tfoot ><br>
+    < /table><br>
+-----
+<u>
+<b><li>HTML - 표3:병합</li></b>
+</u>
+< td rowspan="2" > 두개의 행이 병합된다<br>
+< td colspn ="3" >= 뒤에 따라오는 3개의 < 컬럼 >이 합쳐지는 것을 뜻함<br>
+-rospan 숫자를 적고 숫자만큼 아래쪽 행 td를 지우고 <br>
+-( 컬럼 ) 병합할때 <b>colspan</b> 적은 숫자 뺴기 하나 만큼의 태그를 삭제하면 된다 <br>
