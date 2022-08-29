@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width.initial-scale=1.0">
+        <title>2022.8.29(CSS)</title>
+        
+
+        <style>
+          h2{
+                    border: 1px solid red; 
+            }
+  
+            
+            div{
+            margin: 10px;
+            width: 150px;
+            box-sizing: border-box;
+            }
+            #small{
+                border: 10px solid black;
+            }
+            #targe{
+                border: 30px solid black;
+            } 
+         
+        .a{
+            border: 1px solid red;
+        }
+        #CSS{
+            color: white;
+            background-color: black;
+            border: 3px solid black;
+            font-size: 35px;
+            text-align: center;
+
+        }
+  
+          
+        </style>
+    </head>
+  
+    <body>
+        <p id="CSS">
+            CSS
+        </p>
+        <h1><b><a href="CSS 기록.html">이전</a></b></h1>
+
+        <h3><u><b> CSS 수업 - box-sizing</b></u></h3>
+            <div id="small">hello</div>
+            <div id="targe">hello</div>
+
+    *box-sizing 의 기본 값은 content-box 또는 border-box 로 바꿀 수 있다<br>
+    1. 코딩을 할 때 , 모든 엘리먼트에 대해서 크기를 지정할떄 보더(border)를 기준으로 지정할 수 있게 *를 사용한다 <br> 
+    <b>*</b>< 은  이 웹페이지에 등장하는 모든 태그라는 의미의 선택자 이다 
+
+    <h3><u><b> CSS 수업 - 마진 겹침 1 </b></u></h3>
+        <h2>hello world</h2>
+        <h2>hello world</h2>
+
+    <h3><u><b> CSS 수업 - 마진 겹침 2 </b></u></h3>
+    <a href="margin-collapsing2.html">마진 겹침 2 실습 자료 </a><br>
+
+    <p class="a">
+    - - - - - - 예 시 코 드 <br>
+    #parent{<br>
+        border: 1px solid red;<br>
+        margin-top: 50px;<br>
+    }<br>
+    #child{<br>
+        background-color: blueviolet;<br>
+        margin-top: 50px;<br>
+    }<br>
+< /style><br>
+ < /head><br>
+    < body><br>
+        < div id="parent"><br>
+            < div id="child"><br>
+                Hello world <br>
+            < /div><br>
+        < /div><br>
+    </p>
+        <h3><u><b> CSS 수업 - 마진 겹침 3 </b></u></h3>
+
+        <a href="margin-collapsing3.html">마진 겹침 3 실습 자료 </a><br>
+        <p class="a">
+        - - - - - 예 시 코 드<br>
+        #empty{<br>
+            margin-top: 50px;<br>
+            margin-bottom: 100px;<br>
+            border: 1px solid red;<br>
+        }<br>
+        #normal{<br>
+            background-color: blueviolet;<br>
+            margin-top: 100px;<br>
+        }<br>
+    </ style><br>
+< /head><br>
+< body><br>
+    < div id="empty"></div><br>
+    < div id="normal">normal</div><br>
+</p>
+
+    <h3><u><b> CSS 수업 - 포지션 1 : relative VS static (중요) </b></u></h3>
+    <a href="position_1.html">포지션 1 :relative 실습 자료 </a><br>
+    <p class="a">
+    - - - - - 예시 코드 <br>
+    style><br>
+        html{<br>
+            border: 1px solid gray; }<br>
+            div{border: 5px solid red;<br>
+                margin: 10px;<br>
+            }<br>
+            #me{<br>
+                position: relative;<br>
+                left:100px;<br>
+                top: 100px;<br>
+            }<br>
+            .vip{<br>
+                position: relative;<br>
+                top: 100px;<br>
+            }<br>
+    </ style><br>
+
+< /head><br>
+< body><br>
+    < div id="other">other</ div><br>
+    < div id="parent"><br>
+        parent<br>
+        < div id="me">me</ div><br>
+    < /div>   <br>
+    
+< div class="vip">본인이 left , top , offset 을 사용하기 위해서는 position relative 포지션 타입을 지정 할  핑요가 있다<br>
+    그리고 "포지션 타입을 지정하지 않았다" 는 static 이라고 한다 </ div><br>
+</p>
+
+    </body>
+</html>
