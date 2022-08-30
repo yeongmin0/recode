@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    body{
+        padding-top: 30px;
+    }
+            #parent,#other{
+                border: 5px solid red;
+              
+            }
+            #large{
+                height: 10000px;
+                background-color: red;
+            }
+            /* 픽시트(fixed) 엘리먼트의 부모 엘리먼트는 자식 엘리먼트와 인연이 끊겻이 때매 부모 엘리먼트 크기는 자식엘리먼트 크기를 포함하지 않는다 */
+            #me{
+                background-color: black;
+                color: white;
+                position: fixed;
+                right: 0;
+                top: 0;
+                width: 100%;
+                height: 30px;
+                text-align: center;
+            }
+            .vip{
+                position: relative;
+                top: 200px;
+            }
+    </style>
+
+</head>
+<body>
+    <div id="other">other</div>
+    <div id="parent">
+        parent
+        <div id="me">me</div>
+    </div>   
+    <div id="large">large</div>
+    
+<div class="vip">본인이 left , top , offset 을 사용하기 위해서는 position relative 포지션 타입을 지정 할  핑요가 있다
+    그리고 "포지션 타입을 지정하지 않았다" 는 static 이라고 한다 </div>
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width.initial-scale=1.0">
+     <title>2022.8.30(CSS)</title>
+     <style>
+        .b{
+            border: 1px solid red;
+        }
+        #ab{
+            font-size: 35px;
+            border: 2px solid black;
+            text-align: center;
+        }
+     </style>
+   
+</head>
+<body>
+    <p id="ab">
+        CSS
+    </p>
+    <h1><b><a href="CSS 기록.html">이전</a></b></h1>
+    <hr>
+    <h3><b>4가지의 포지션</b></h3>
+    <ol>
+    <li>스택티 (static) 기본</li>
+    <li>렐렅티브 (relative) 상대적인 크기 </li>
+    <li>앱설루트 (absolute) 절대적인 크기</li>
+    <li>픽시트(fixed)는 스크롤과는 상관없이 화면에 고정 시키는 것 </li>
+    <Li>그 중에 앱설루트 (absolute)와 픽시트(fixed) 는 부모와 링크가 끊기기 때문에 부피가 자기의 컨텐츠 크기만해지고 <br>
+        그리고 부모 엘리먼트들은 자식을 없는 셈치는, 그래서 작아지는 특징이 있다는 것  </Li>
+      </ol>
+      <hr>
+      <h3><u><b> CSS 수업 - 포지션 2 : relative</b></u></h3>
+    <a href="position_2.html">포지션 2 :relative 실습 자료 </a><br>
+    <hr>
+    <p class="b">
+    style><br>
+    
+            #parent,#other{border: 5px solid red;<br>
+              
+            }<br>
+            #me{<br>
+                background-color: black;<br>
+                color: white;<br>
+                position: absolute;<br>
+            }<br>
+            .vip{<br>
+                position: relative;<br>
+                top: 200px;<br>
+            }<br>
+    </ style><br>
+
+</ head><br>
+< body><br>
+    < div id="other">other</div><br>
+    < div id="parent"><br>
+        parent<br>
+        < div id="me">me</div><br>
+    < /div>   <br>
+    
+< div class="vip">본인이 left , top , offset 을 사용하기 위해서는 position relative 포지션 타입을 지정 할  핑요가 있다<br>
+    그리고 "포지션 타입을 지정하지 않았다" 는 static 이라고 한다 </div><br>
+</p>
+
+    <h3><u><b> CSS 수업 - 포지션 3 : fixed</b></u></h3>
+    <a href="position_3.html">포지션 2 :relative 실습 자료 </a><br>
+    <hr>
+    <p class="b">
+    style><br>
+    body{<br>
+        padding-top: 30px;<br>
+    }<br>
+            #parent,#other{<br>
+                border: 5px solid red;<br>
+              
+            }<br>
+            #large{<br>
+                height: 10000px;<br>
+                background-color: red;<br>
+            }<br>
+            /* 픽시트(fixed) 엘리먼트의 부모 엘리먼트는 자식 엘리먼트와 인연이 끊겻이 때매 부모 엘리먼트 크기는 자식엘리먼트 크기를 포함하지 않는다 */<br>
+            #me{<br>
+                background-color: black;<br>
+                color: white;<br>
+                position: fixed;<br>
+                right: 0;<br>
+                top: 0;<br>
+                width: 100%;<br>
+                height: 30px;<br>
+                text-align: center;<br>
+            }<br>
+            .vip{<br>
+                position: relative;<br>
+                top: 200px;<br>
+            }<br>
+    < /style><br>
+
+< /head><br>
+< body><br>
+    < div id="other">other</div><br>
+    < div id="parent"><br>
+        parent<br>
+        < div id="me">me</div><br>
+    < /div>   <br>
+    < div id="large">large</div><br>
+    
+< div class="vip">본인이 left , top , offset 을 사용하기 위해서는 position relative 포지션 타입을 지정 할  핑요가 있다<br>
+    그리고 "포지션 타입을 지정하지 않았다" 는 static 이라고 한다 </div><br>
+    
+</p>
+
+
+<h3><u><b> CSS 수업 - fixe 1 :into</b></u></h3>
+
+<h3><u><b> CSS 수업 - flex - basic</b></u></h3>
+
+<a href="flex_1_basic.html"> flex 1 베이식스 실습자료</a>
+<p class="b">
+- - - - - - 예 시 코드 <br>
+
+style><br>
+        .container{<br>
+            background-color: powderblue;<br>
+            height: 200px;<br>
+            display: flex;<br>
+            flex-direction: column;<br>
+        }<br>
+        .itme{<br>
+            background-color: red;<br>
+            color: white;<br>
+            border: 1px solid white;<br>
+        }<br>
+    </ style><br>
+< body><br>
+    < div class="container"><br>
+        < div class="itme">1</div><br>
+        < div class="itme">2</div><br>
+        < div class="itme">3</div><br>
+        < div class="itme">4</div><br>
+        < div class="itme">5</div><br>
+    </p>
+    <h3><u><b> CSS 수업 - flex3 : basis &grow &shrink</b></u></h3>
+    <a href="flex_2_grow_shrink.html">flex 3: basis &grow & shrink 실습 자료</a>
+   <p class="b">
+    = = = = 예 시 코 드 <br>
+    .container{<br>
+        background-color: powderblue;<br>
+        height: 200px;<br>
+        display: flex;<br>
+        flex-direction: row;<br>
+    }<br>
+    .itme{<br>
+        background-color: red;<br>
+        color: white;<br>
+        border: 1px solid white;<br>
+     <br>
+    }<br>
+    .itme:nth-child(1){<br>
+     flex-basis: 100px;<br>
+    flex-shrink: 0;<br>
+    }<br>
+    .itme:nth-child(2){<br>
+     flex-basis: 50px;<br>
+    flex-shrink: 0;<br>
+    }<br>
+</ style><br>
+</ gead><br>
+< body><br>
+< div class="container"><br>
+    < div class="itme">1</div><br>
+    < div class="itme">2</div><br>
+    < div class="itme">3</div><br>
+    < div class="itme">4</div><br>
+    < div class="itme">5</div><br>
+</p>
+<h3><u><b> CSS 수업 - flex 4: holy grail (중요_)</b></u></h3>
+<a href="flex_3_holyGrailLayout.html">flex_3_holyGrailLayout 실습자료 ( 중요 )</a>
+</body>
+</html>

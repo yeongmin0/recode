@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<gead>
+    <style>
+        .container{
+            background-color: powderblue;
+            height: 200px;
+            display: flex;
+            flex-direction: row;
+        }
+        .itme{
+            background-color: red;
+            color: white;
+            border: 1px solid white;
+         
+        }
+        .itme:nth-child(1){
+         flex-basis: 100px;
+        flex-shrink: 0;
+        }
+        .itme:nth-child(2){
+         flex-basis: 50px;
+        flex-shrink: 0;
+        }
+    </style>
+</gead>
+<body>
+    <div class="container">
+        <div class="itme">1</div>
+        <div class="itme">2</div>
+        <div class="itme">3</div>
+        <div class="itme">4</div>
+        <div class="itme">5</div>
+    </div>
+
+</body>
+</html>
