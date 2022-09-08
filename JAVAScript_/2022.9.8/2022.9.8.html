@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="2022.9.8.css">
+    <title>2022.9.8(JavaScript)</title>
+</head>
+<body>
+<p id="java">
+        <U>JavaScript</U>
+</p>
+<h1><b><a href="/JAVAScript_/JavaScript 기록.html">이전</a></b></h1>
+
+<h3><u><b>  Javascript - 변수 (1/2): 사용법 </b></u></h3>     
+<p class="JAVA">
+    -자바에서 (a) 러는 것은 어떠한 수를 담을 수 있는 그릇이라는 의미를 가지면 된다 <br>
+    (숫자 뿐만아니라 문자도 들어 갈 수도 있다 )
+</p>
+    <h3><u><b>  Javascript - 변수 (2/2): 변수의 효옹 </b></u></h3>
+    <p class="JAVA">  
+    a = 100; (변할 수 있는 )<br>
+<br>
+    a = a + 10;   <br>
+    alert(a);<br>
+    a = a / 10;<br>
+    alert(a);      (변하지 않는 )<br>
+    a = a - 10;
+    alert(a);<br>
+    a = a * 10; <br>     
+    alert(a);<br>
+</p>
+
+<h3><u><b>  Javascript - 주석 </b></u></h3>
+<p class="JAVA">
+    주석의 종류 : / /  < 이게 있고 <br>
+<br><br><br>            / * ㅣ * / < 이런게 있는데 ( 여려줄에 사용이 가능하다 )<br>
+</p>
+<h3><u><b>  Javascript - 줄바꿈과 여백  </b></u></h3>
+<p class="JAVA">
+    ; (세미콜론) :명령이 끝났다 라는 것을 명시적으로 표시할때 쓰는 기호 <br>
+    - 추가적으로 ;(세미콜론)이 없어도 되는데 그럼 자바스크립트는 명령이 끝났다 라고 생각한다 <br>
+</p>
+<h3><u><b>  Javascript - 비교(1/4):연산자란 ?   </b></u></h3>
+
+<h3><u><b>  Javascript - 비교(2/4):== 과 ===   </b></u></h3>
+
+    ==:동등 연산자로 좌향과 우향을 비교해서 서로 값이 같다면 true 다르다면 false 가 된다  
+<p class="JAVA">
+    예 시 <br>
+    alert(1==2)  <br>           //false<br>
+    alert(1==1)  <br>           //true<br>
+    alert("one"=="two")  <br>   //false <br>
+    alert("one"=="one") <br>    //true<br>
+</p>
+    ===(equal operator): 일치 연산자로 === 좌항과 우항이 '정확'하게 같을 때 true 다르면 false가 된다. 여기서 정확하다는 말의 의미에 집중하자. 아래 예를보자.<br>
+<p class="JAVA">
+    예시 <br>
+    alert(1=='1'); <br>             //true<br>
+    alert(1==='1'); <br>            //false<br>
+</p>
+
+<h3><u><b>  Javascript - 비교(3/4) ===를 사용하자 !    </b></u></h3>
+<p class="JAVA">    
+    예시<br>
+    alert(null == undefined)         //true<br>
+    alert(null === undefined);       //false<br>
+    alert(true == 1);                //true<br>
+    alert(true === 1);               //false<br>
+    alert(true == '1');              //true<br>
+    alert(true === '1');             //false<br>
+    
+    alert(0 === -0);                //true<br>
+    alert(NaN === NaN);             //false<br>
+    null : 값이 없는것
+    undefined: 정의되지 않은 것<br>
+</p>
+    <h3><u><b>  Javascript - 비교(4/4) 부정과 부등호     </b></u></h3>
+ <p class="JAVA">   
+    > :좌향이 우향보다 크다면 참 , 그렇지 않다면 거짓임을 알려주는 연산자다 <br>
+    >=: 좌향이 우향보다 크거나 같다. '<=는 반대의 의미로 언급은 생략<br>
+</p>
+
+ <h3><u><b>  *Javascript - 조건문(1/5): 조건문이란 *    </b></u></h3>
+<p class="JAVA">
+    -조건문이란: 주어진 조건에 따라서 에플리케이션을 다르게 동작하도록 하는 것이다.<br>
+    if: 뒤의 괄호에 조건이 오고 , 조건이 될 수 있는 값은 boolean이다 <br>
+    예 제 <br>
+
+    아래 예제의 실행결과는 'result : true'다. if 뒤에 true가 왔기 때문이다.<br>
+
+        if(true){<br>
+            alert('result : true');<br>
+                }<br>
+-------------------------------------------------------------------------------<br>
+    다음 예제는 아무것도 출력하지 않을 것이다. if 뒤에 false가 왔기 때문이다.<br>
+
+    if(false){<br>
+        alert('result : true');<br>
+    }<br>
+<hr>
+</p>
+</body>
+</html>
