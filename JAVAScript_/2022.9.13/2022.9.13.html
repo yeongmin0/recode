@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="2022.9.13.css">
+    <title>2022.9.13(JAVAScript_</title>
+</head>
+
+
+<body>
+<p id="JAVA">
+    Javascript
+</p>
+<h1><b><a href="/JAVAScript_/JavaScript 기록.html">기록실</a></b></h1>
+<h3><u><b>  *Javascript - 조건문(1/5): 조건문이란 *    </b></u></h3>
+<p class="JAVA">
+    -조건문이란: 주어진 조건에 따라서 에플리케이션을 다르게 동작하도록 하는 것이다.<br>
+    if: 뒤의 괄호에 조건이 오고 , 조건이 될 수 있는 값은 boolean이다 <br>
+    예 제 <br>
+
+    아래 예제의 실행결과는 'result : true'다. if 뒤에 true가 왔기 때문이다.<br>
+
+        if(true){<br>
+            alert('result : true');<br>
+                }<br>
+-------------------------------------------------------------------------------<br>
+    다음 예제는 아무것도 출력하지 않을 것이다. if 뒤에 false가 왔기 때문이다.<br>
+
+    if(false){<br>
+        alert('result : true');<br>
+    }<br>
+    </p>
+ <h3><u><b>  *Javascript - 조건문(2/5): else, else if    </b></u></h3>
+<b>else : 앞쪽에 나오는 조건문이 실행이 안됬을때 실행되는 것 </b><br>
+<p class="JAVA">
+    else if<br>
+
+    else if를 이용하면 조건문을 좀 더 풍부하게 할 수 있다. 아래 예제를 보자. 결과는 2다.<br>
+ 
+     if(false){<br>
+         alert(1);<br>
+    } else if(true){<br>
+         alert(2);<br>
+    } else if(true){<br>
+      alert(3);<br>
+     } else {<br>
+         alert(4);<br>
+     }<br>
+    <b>중요 : else if는 좀 더 다양한 케이스의 조건을 검사할 수 있는 기회를 제공한다. else if의 특징은 if나 else와는 다르게 여러개가 올 수 있다는 점이다. <br>
+    else if의 모든 조건이 false라면 else가 실행된다. else는 생략 가능하다.</b><br>
+    </p>
+ <h3><u><b>  *Javascript - 조건문(3/5):  조건문의 응용     </b></u></h3>
+
+ 실습 : <a href="dema1.html">조건문의 응용 실습 </a>
+ <p class="JAVA">
+ 예 시 코 드 <br>
+
+ var id = prompt('아이디를 입력해주세요.');<br>
+ if(id==='yeong'){<br>
+     var password = prompt('비밀번호를 입력해주세요');<br>
+     if(password ==='111111'){<br>
+         alert('로그인 하셨습니다.'+id+ '님 반갑습니다.'); <br>
+     } else {<br>
+         alert('비밀번호가 다릅니다');<br>
+     }<br>
+     
+ }else {<br>
+     alert('아이디가 일치하지 않습니다.');<br>
+ }<br>
+</p>
+
+<h3><u><b>  *Javascript - 조건문(4/5):  논리 연산자      </b></u></h3>
+
+    논리연산자 : &&는 좌향과 우향이 모두 참 (true)일 때 참이된다. 다음 예제를 보자 결과는 1이다 &&의 좌우향이 모두 <br>
+    true인 것은 첫번째 조건문 밖에 없기 때문이다. 이러한 논리 연산자를 and 연산자라고 한다 
+<p class="JAVA">
+    예 시 코 드 <br>
+
+    id = prompt('아이디를 입력해주세요.');<br>
+    password = prompt('비밀번호를 입력해주세요.');<br>
+    if(id=='yeong' && password=='111111'){<br>
+        alert('인증 했습니다.');<br>
+    } else {<br>
+        alert('인증에 실패 했습니다.');<br>
+    }<br>
+    -------------------------------------------------<br>
+    or 연산자 : '||'는 '||'의 좌우항 중에 하나라도 true라면 true가 되는 논리 연산자다. <br>
+    |기호는 통상 엔터키 위에 있는 원화표시 키를 쉬프트와 함께 누르면 입력된다. or 연산자라고 부른다. 다음 예를 보자. <br>
+    결과는 1,2,3이 출력된다. 마지막 조건문의 '||'는 좌항과 우항이 모두 false이기 때문에 false가 된다.<br>
+<br><br>
+    not 연산자 : '!'는 부정의 의미로, Boolean의 값을 역전시킨다. true를 false로 false를 true로 만든다. 
+    not 연산자라고 부른다. 아래의 결과는 4다.
+</p>
+<h3><u><b>  *Javascript - 조건문(5/5):  boolean의 대체재       </b></u></h3>
+<p class="JAVA">
+    <img src="기타 false 로 간주하는 데이터 형.JPG" title="출처:생활코딩"> 
+</p>
+
+<h3><u><b>  *Javascript - 반복(1/6) : 기본문법 </b></u></h3>
+
+    <h3>반복문</h3>: 인간은 반복적인 작업을 잘하지 못한다. 실수하고 , 지루해한다 . 컴퓨터는 이런 반복적인 작업을 대행하기 위해서 만들어진 기게다<br>
+    반복문은 컴퓨터에게 반복적인 작업을 지시하는 방법이다<br>
+<p class="JAVA">
+    <img src="반복문.JPG" alt="출처:생활코딩" title="출처:생활코딩">
+</p>
+
+<h3><u><b>  *Javascript - 반복(2/6) : 반복조건 </b></u></h3>
+
+    <a href="반복문 무한루프 해결.html">반복문 무한루프 실습</a>
+
+<h3><u><b>  *Javascript - 반복(3/6) : for 문  </b></u></h3>
+    i ++ / ++ i 가 있다 
+</body>
+</html>
